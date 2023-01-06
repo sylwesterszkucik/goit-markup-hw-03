@@ -1,3 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+
 .filters:hover,
 .focus {
   color: #ffffff;
@@ -40,6 +59,8 @@
   line-height: 1;
   letter-spacing: 0.02em;
   color: #757575;
+
+  padding-left: 50px;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -72,6 +93,11 @@ body {
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
+
+  padding-top: 24px;
+  padding-right: 0px;
+  padding-bottom: 25px;
+  padding-left: 215px;
 }
 .logoblue:hover,
 .focus {
@@ -161,4 +187,28 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.toplinenavigation {
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio {
+  padding-top: 32px;
+  padding-right: 46px;
+  padding-bottom: 32px;
+  padding-left: 46px;
 }
