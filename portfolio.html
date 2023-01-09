@@ -20,25 +20,27 @@
   </head>
   <body>
     <header>
-      <div class="container toplinenavigation">
-        <!---menu-->
-        <a class="logoblue" href="index.html"
-          >Web<span class="logoblack">Studio</span></a
-        >
-        <nav class="menu">
-          <a class="link" href="/Agencja">Agencja</a>
-          <a class="link portfolio" href="/Portfolio">Portfolio</a>
-          <a class="link" href="/Kontakt">Kontakt</a>
-        </nav>
-        <a class="communication" href="tel:+48111111111">Telefon</a>
-        <a class="communication" href="mailto:info@devstudio.com">eMail</a>
-        <!---/menu--->
+      <div class="container">
+        <div class="toplinenavigation">
+          <a class="logoblue" href="index.html"
+            >Web<span class="logoblack">Studio</span></a
+          >
+          <nav class="menu">
+            <a class="link" href="/Agencja">Agencja</a>
+            <a class="link" href="/Portfolio">Portfolio</a>
+            <a class="link" href="/Kontakt">Kontakt</a>
+          </nav>
+          <div class="communicationbox">
+            <a class="communication" href="tel:+48111111111">Telefon</a>
+            <a class="communication" href="mailto:info@devstudio.com">eMail</a>
+          </div>
+        </div>
       </div>
     </header>
 
     <!---filters-->
     <ul>
-      <div class="container">
+      <div class="container filterscontainer">
         <li><button class="filters" type="button">Wszystkie</button></li>
         <li><button class="filters" type="button">Strony</button></li>
         <li><button class="filters" type="button">Aplikacje</button></li>
@@ -50,133 +52,145 @@
     <main>
       <ul>
         <div class="container">
-          <li>
-            <figure>
-              <img
-                src="images/h21.jpg"
-                alt="otwarty laptop wyswietlajacy trzy zdjęcia"
-                width="150"
-                height="150"
-              />
-              <figcaption>
-                <span class="headline">Technocrack</span>
-                <span class="category">Strona internetowa</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/h22.jpg"
-                alt="dwóch koszykarzy jeden w barwach new orlean drugi golden star walczy o piłkę "
-                width="150"
-                height="150"
-              />
-              <figcaption>
-                <span class="headline">Grafika New Orlean vs Golden Star</span>
-                <span class="category">Dizajn</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/h23.jpg"
-                alt="napis the seafood restaurant est 2001 na tle ryby"
-                width="150"
-                height="150"
-              />
-              <figcaption>
-                <span class="headline">Restauracja Seafood</span
-                ><span class="category"> Aplikacja</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/h24.jpg"
-                alt="czarne słuchawki nauszne"
-                width="150"
-                height="150"
-              />
-              <figcaption>
-                <span class="headline">Projekt Prime</span
-                ><span class="category"> Marketing</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/h25.jpg"
-                alt="dwa pudełka jedno białe drugie koloru kartonu"
-                width="150"
-                height="150"
-              />
-              <figcaption>
-                <span class="headline">Projekt Boxes</span
-                ><span class="category"> Aplikacja</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/h26.jpg"
-                alt="monitor apple wyświetlający białe napisy na czornym tle"
-                width="150"
-                height="150"
-              />
-              <figcaption>
-                <span class="headline">Inspiration has no Borders</span
-                ><span class="category"> Strona</span>
-                internetowa
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/h27.jpg"
-                alt="otwarty magazyn na stronach dwa duze zdjęcia"
-                width="150"
-                height="150"
-              />
-              <figcaption>
-                <span class="headline">Magazyn Limited Edition</span
-                ><span class="category"> Dizajn</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/h28.jpg"
-                alt="biała zawieszka  lab el tag wisząca na sznurku"
-                width="150"
-                height="150"
-              />
-              <figcaption>
-                <span class="headline">Projekt LAB</span
-                ><span class="category"> Marketing</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/h29.jpg"
-                alt="otwarty laptop wyswietlajacy prezantacje growing business, nad klawiatura dłonie"
-                width="150"
-                height="150"
-              />
-              <figcaption>
-                <span class="headline">Growing Business</span
-                ><span class="category"> Aplikacja</span>
-              </figcaption>
-            </figure>
-          </li>
+          <div class="card-set">
+            <li class="card">
+              <figure>
+                <img
+                  class="photos"
+                  src="images/h21.jpg"
+                  alt="otwarty laptop wyswietlajacy trzy zdjęcia"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <span class="headline">Technocrack</span>
+                  <br />
+                  <span class="category">Strona internetowa</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="card">
+              <figure>
+                <img
+                  src="images/h22.jpg"
+                  alt="napis the seafood restaurant est 2001 na tle ryby"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <span class="headline">Restauracja Seafood</span>
+                  <br />
+                  <span class="category"> Aplikacja</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="card">
+              <figure>
+                <img
+                  src="images/h23.jpg"
+                  alt="napis the seafood restaurant est 2001 na tle ryby"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <span class="headline">Restauracja Seafood</span>
+                  <br />
+                  <span class="category"> Aplikacja</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="card">
+              <figure>
+                <img
+                  src="images/h24.jpg"
+                  alt="czarne słuchawki nauszne"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <span class="headline">Projekt Prime</span>
+                  <br />
+                  <span class="category"> Marketing</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="card">
+              <figure>
+                <img
+                  src="images/h25.jpg"
+                  alt="dwa pudełka jedno białe drugie koloru kartonu"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <span class="headline">Projekt Boxes</span>
+                  <br />
+                  <span class="category"> Aplikacja</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="card">
+              <figure>
+                <img
+                  src="images/h26.jpg"
+                  alt="monitor apple wyświetlający białe napisy na czornym tle"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <span class="headline">Inspiration has no Borders</span>
+                  <br />
+                  <span class="category"> Strona</span>
+                  internetowa
+                </figcaption>
+              </figure>
+            </li>
+            <li class="card">
+              <figure>
+                <img
+                  src="images/h27.jpg"
+                  alt="otwarty magazyn na stronach dwa duze zdjęcia"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <span class="headline">Magazyn Limited Edition</span>
+                  <br />
+                  <span class="category"> Dizajn</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="card">
+              <figure>
+                <img
+                  src="images/h28.jpg"
+                  alt="biała zawieszka  lab el tag wisząca na sznurku"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <span class="headline">Projekt LAB</span>
+                  <br />
+                  <span class="category"> Marketing</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="card">
+              <figure>
+                <img
+                  src="images/h29.jpg"
+                  alt="otwarty laptop wyswietlajacy prezantacje growing business, nad klawiatura dłonie"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <span class="headline">Growing Business</span>
+                  <br />
+                  <span class="category"> Aplikacja</span>
+                </figcaption>
+              </figure>
+            </li>
+          </div>
         </div>
       </ul>
     </main>
@@ -184,14 +198,16 @@
     <footer>
       <div class="container">
         <address>
-          <p>
-            <a class="logoblue" href="index.html"
-              >Web<span class="logoblack">Studio</span></a
-            >
-          </p>
-          <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-          <a class="communication" href="tel:+48111111111">Telefon</a>
-          <a class="communication" href="mailto:info@devstudio.com">eMail</a>
+          <div class="footerstyles">
+            <p>
+              <a class="logoblue" href="index.html"
+                >Web<span class="logoblack">Studio</span></a
+              >
+            </p>
+            <p class="footeradress">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <a class="communication" href="tel:+48111111111">Telefon</a>
+            <a class="communication" href="mailto:info@devstudio.com">eMail</a>
+          </div>
         </address>
       </div>
     </footer>

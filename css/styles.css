@@ -97,7 +97,6 @@ body {
   padding-top: 24px;
   padding-right: 0px;
   padding-bottom: 25px;
-  padding-left: 215px;
 }
 .logoblue:hover,
 .focus {
@@ -193,22 +192,95 @@ body {
   margin: 0 auto;
 }
 .toplinenavigation {
-  width: 1600px;
+  width: 1200px;
   height: 80px;
   left: 0px;
   top: 0px;
-
   background: #ffffff;
-
   border-bottom: 1px solid #ececec;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.portfolio {
-  padding-top: 32px;
-  padding-right: 46px;
-  padding-bottom: 32px;
-  padding-left: 46px;
+.menu .link {
+  display: inline-flex;
+
+  margin-top: 32px;
+  margin-right: 46px;
+  margin-bottom: 32px;
+  margin-left: 46px;
+}
+.menu .link:first-child {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.menu .link:last-child {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.communicationbox {
+  display: flex;
+  justify-content: flex-end;
+}
+.filterscontainer {
+  margin-top: 180px;
+  margin-right: 532px;
+  margin-left: 540px;
+
+  display: flex;
+  justify-content: center;
+}
+.filters {
+  box-shadow: none;
+  border: none;
+  margin-left: 8px;
+  margin-bottom: 56px;
+}
+
+.card-set {
+  max-width: 1200px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  box-sizing: border-box;
+
+  max-width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
+figure {
+  margin: 0;
+  width: 370;
+}
+
+.footerstyles {
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+  background: #2f303a;
+  display: block;
+}
+.footeradress {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  margin-left: 215px;
 }
