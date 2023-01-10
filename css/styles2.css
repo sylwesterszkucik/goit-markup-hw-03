@@ -16,12 +16,24 @@ ol,
 ul {
   list-style: none;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.body {
+  width: 1600px;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.homepagebox {
+  width: 1200px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: #2f303a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .toplinenavigation {
   position: absolute;
   width: 1200px;
@@ -32,6 +44,9 @@ ul {
   border-bottom: 1px solid #ececec;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-left: 44px;
+  margin-right: 44px;
 }
 .logoblue {
   font-family: "Raleway";
@@ -44,8 +59,6 @@ ul {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-left: 0px;
-  margin-right: 93px;
 }
 .logoblue:hover,
 .focus {
@@ -65,6 +78,17 @@ ul {
 .focus {
   text-decoration: underline;
 }
+.logoandlinks {
+  justify-content: center;
+  display: inline-flex;
+  gap: 93px;
+}
+.menulinklist {
+  display: flex;
+  gap: 46px;
+  padding-top: 12px;
+}
+
 .link {
   font-family: "Roboto";
   font-style: normal;
@@ -79,18 +103,7 @@ ul {
   color: #212121;
   text-decoration: underline;
 }
-.menu .link:first-child {
-  margin-left: 0;
-  margin-right: 0;
-}
-.menu .link:nth-child(2) {
-  margin-right: 46px;
-  margin-left: 46px;
-}
-.menu .link:last-child {
-  margin-right: 0;
-  margin-left: 0;
-}
+
 .communication {
   font-family: "Roboto";
   font-style: normal;
@@ -106,17 +119,14 @@ ul {
   color: #2196f3;
 }
 .communicationbox {
-  margin-left: 364px;
-  margin-right: 0px;
+  display: flex;
+  gap: 50px;
 }
-.communicationbox .communication:first-child {
-  margin-right: 50px;
-}
+
 .filterscontainer {
+  display: flex;
+  justify-content: center;
   margin-top: 180px;
-  margin-bottom: ;
-  margin-left: ;
-  margin-right: ;
 }
 .filters {
   font-family: "Roboto";
@@ -129,7 +139,6 @@ ul {
   background: #f5f4fa;
   box-shadow: none;
   border: none;
-  margin-left: 8px;
   margin-bottom: 56px;
 }
 .filters:hover,
@@ -137,7 +146,85 @@ ul {
   color: #ffffff;
   background-color: #2196f3;
 }
-ul {
+.filterlist {
   display: flex;
   justify-content: center;
+  gap: 8px;
+}
+.photolist {
+  padding: 0;
+}
+.card-set {
+  max-width: 1200px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  box-sizing: border-box;
+
+  max-width: 370px;
+  height: 404px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
+figure {
+  margin: 0;
+  width: 370;
+}
+.headline {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+.category {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 87;
+  letter-spacing: 0.03em;
+  color: #757575;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+.textbelowphotos {
+  margin-top: 20px;
+}
+.backgroundbox {
+  width: 1200px;
+  height: 252px;
+  background: #2f303a;
+}
+.footeradress {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+.footerstyles {
+  margin-top: 94px;
+  display: flex;
+  flex-direction: column;
+}
+.footerlogo {
+  display: flex;
+  margin-top: 60px;
+}
+.communicationfooter {
+  margin-bottom: 9px;
 }

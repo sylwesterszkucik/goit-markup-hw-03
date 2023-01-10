@@ -188,7 +188,7 @@ body {
   color: #757575;
 }
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 .toplinenavigation {
@@ -205,7 +205,7 @@ body {
 
 .menu .link {
   display: inline-flex;
-
+  justify-content: flex-start;
   margin-top: 32px;
   margin-right: 46px;
   margin-bottom: 32px;
@@ -226,18 +226,15 @@ body {
   justify-content: flex-end;
 }
 .filterscontainer {
-  margin-top: 180px;
-  margin-right: 532px;
-  margin-left: 540px;
-
   display: flex;
   justify-content: center;
+  margin-top: 180px;
+  margin-bottom: 56px;
+  gap: 8px;
 }
 .filters {
   box-shadow: none;
   border: none;
-  margin-left: 8px;
-  margin-bottom: 56px;
 }
 
 .card-set {
@@ -270,7 +267,8 @@ figure {
   left: 0px;
   top: 1628px;
   background: #2f303a;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 .footeradress {
   font-family: "Roboto";
@@ -282,5 +280,8 @@ figure {
   letter-spacing: 0.03em;
 
   color: #ffffff;
-  margin-left: 215px;
+  display: block;
+}
+.body {
+  width: 1600px;
 }
